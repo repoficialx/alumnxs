@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlumnxsMAUI9.Pages.InformacionPage"
+             Title="Información">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <Label Text="Información general sobre el proyecto Alumn@s y Alumnxs." FontSize="18" />
+            <Label Text="Este conjunto de apps tiene como objetivo..." />
+            <Label Text="INTERFACES USADAS" />
+            <Label Text="ALUMN@S (BASE,FRAMEWORK 4.7)"/>
+            <Label 
+Text="ModernUI, InsIU 11.8\r\nTodas las interfaces vienen con la app integradas\r\nModernUI / Metro son de Microsoft\r\n
+InsIU 11.8 / IIU 11 es de iNS\r\n©2022 iNS. Todos los derechos Reservados" />
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

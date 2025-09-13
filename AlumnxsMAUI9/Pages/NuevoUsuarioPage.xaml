@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlumnxsMAUI9.Pages.NuevoUsuarioPage"
+             Title="Nuevo Usuario">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Nombre" />
+            <Entry Placeholder="Introduce el nombre"
+                   x:Name="NombreEntry"/>
+
+            <Label Text="Fecha de nacimiento" />
+            <Entry Placeholder="DD/MM/AAAA"
+                   Keyboard="Numeric" 
+                   x:Name="FechaNacimientoEntry"/>
+
+            <Label Text="Nº de Teléfono" />
+            <Entry Placeholder="Ej: +34 612 345 678"
+                   Keyboard="Telephone" 
+                   x:Name="TelefonoEntry"/>
+
+            <Label Text="E·Mail" />
+            <Entry Placeholder="usuario@ejemplo.com"
+                   Keyboard="Email" 
+                   x:Name="EmailEntry"/>
+
+            <Label Text="Género" />
+            <Picker Title="Selecciona el género"
+                    x:Name="GeneroPicker">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Mujer cis</x:String>
+                        <x:String>Mujer trans</x:String>
+                        <x:String>Hombre cis</x:String>
+                        <x:String>Hombre trans</x:String>
+                        <x:String>No binario</x:String>
+                        <x:String>Agénero</x:String>
+                        <x:String>Intersex</x:String>
+                        <x:String>Género fluido</x:String>
+                        <x:String>Bigénero</x:String>
+                        <x:String>Género queer</x:String>
+                        <x:String>Género no conforme</x:String>
+                        <x:String>Transfemenino</x:String>
+                        <x:String>Pangénero</x:String>
+                        <x:String>Otro</x:String>
+                        <x:String>Prefiero no decirlo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Notas 1" />
+            <Entry Placeholder="Notas adicionales" 
+                   x:Name="Notas1Entry"/>
+
+            <Label Text="Notas 2" />
+            <Entry Placeholder="Más información" 
+                   x:Name="Notas2Entry"/>
+
+            <Label Text="Notas 3" />
+            <Editor Placeholder="Texto largo..."
+                    AutoSize="TextChanges"
+                    HeightRequest="100"
+                    x:Name="Notas3Editor"/>
+
+            <Button Text="Guardar archivo"
+                    BackgroundColor="CornflowerBlue"
+                    TextColor="White"
+                    CornerRadius="10" 
+                    Clicked="OnGuardarArchivoClicked"/>
+<!--Clicked="OnGuardarArchivoClicked"-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
